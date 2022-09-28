@@ -1,0 +1,34 @@
+\mode<presentation>
+
+\setbeamertemplate{itemize item}{\scriptsize\color{base-color-two}$\blacksquare$}
+\setbeamertemplate{itemize subitem}{\tiny\color{base-color-two}$\blacksquare$}
+
+\setbeamertemplate{title page}{%
+  \vskip0.2\paperheight
+  \begin{beamercolorbox}[wd=\paperwidth, ht=0.45\paperheight]{titlepage}
+    \begin{tikzpicture}
+      \useasboundingbox (0,0) rectangle (\paperwidth,\paperheight);
+      \fill[base-color-one] (10pt, -25pt) rectangle (\paperwidth - 10pt,100pt);
+      \node[anchor=west] at (10pt, 0.49\paperheight) {
+        \begin{minipage}{0.8\paperwidth}
+          \usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par
+        \end{minipage}
+      };
+      \node[anchor=west] at (20pt, 0.17\paperheight) {
+        \begin{minipage}{0.7\paperwidth}
+          \usebeamerfont{date}\insertdate\par
+          \vskip10pt
+          \usebeamerfont{author}\insertauthor\par
+          \vskip5pt
+          \usebeamerfont{institute}\insertinstitute\par
+        \end{minipage}
+        \begin{minipage}{0.2\paperwidth}
+          \centering
+          \inserttitlegraphic
+        \end{minipage}
+      };
+		\end{tikzpicture}
+  \end{beamercolorbox}
+}%
+
+\mode<all>
