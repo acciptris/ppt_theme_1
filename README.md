@@ -16,4 +16,6 @@
    \usefonttheme[onlymath]{serif}
    ```
 
-WIP
+# Inspirations
+* https://github.com/sano-jin/express-beamer
+* https://github.com/NicklasXYZ/NXYZBeamerTheme
