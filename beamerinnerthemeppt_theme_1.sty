@@ -4,12 +4,12 @@
 \setbeamertemplate{itemize subitem}{\tiny\color{base-color-two}$\blacksquare$}
 
 \setbeamertemplate{title page}{%
-  \vskip0.2\paperheight
+  \vskip0.45\paperheight
   \begin{beamercolorbox}[wd=\paperwidth, ht=0.45\paperheight]{titlepage}
     \begin{tikzpicture}
       \useasboundingbox (0,0) rectangle (\paperwidth,\paperheight);
-      \fill[base-color-one] (10pt, -25pt) rectangle (\paperwidth - 10pt,100pt);
-      \node[anchor=west] at (10pt, 0.49\paperheight) {
+      \fill[base-color-one] (10pt, -10pt) rectangle (\paperwidth - 10pt, 0.38\paperheight);
+      \node[anchor=west] at (10pt, 0.44\paperheight) {
         \begin{minipage}{0.8\paperwidth}
           \usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par
         \end{minipage}
